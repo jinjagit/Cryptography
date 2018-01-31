@@ -8,4 +8,4 @@ If you are interested, feel free to follow allong on my blog: https://cryptograp
 
 Also, feel free to check my homework! (I don't have access to the 'official' homework answers).
 
-NOTE: I am new to Python, so I would not use my code as an example of 'good' code ;-)
+NOTE: I am new to Python, so I would advise against using my code as an example of 'good' code ;-)
