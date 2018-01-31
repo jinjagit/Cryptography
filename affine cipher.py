@@ -50,6 +50,3 @@ encoded = encodeAffine(21, 13, message)
 decodeAffine(21, 13, encoded)
 encoded = encodeAffine(3, 22, message)
 decodeAffine(3, 22, encoded)
-
-
-
