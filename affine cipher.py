@@ -14,7 +14,7 @@ def encodeAffine (a, b, message):
                 x = (a * j + b)%26
                 encoded = encoded + alphabet[x]
     print()
-    print("Encoded with a = %d, b = %d; %s " % (a, b, encoded))
+    print("Encoded with a = %d, b = %d; %s" % (a, b, encoded))
     return encoded
 
 #  To decode: D(x) = c(x - b) mod m
@@ -34,7 +34,7 @@ def decodeAffine (a, b, encoded):
             if encoded[i] == alphabet[j]:
                 x = (c * (j - b))%26
                 decoded = decoded + alphabet[x]
-    print("Decoded with a = %d, b = %d; %s " % (a, b, decoded))
+    print("Decoded with a = %d, b = %d; %s" % (a, b, decoded))
     return decoded
 
 message = "ATTACK"
