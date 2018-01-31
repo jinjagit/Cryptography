@@ -48,5 +48,9 @@ encoded = encodeAffine(3, 13, message)
 decodeAffine(3, 13, encoded)
 encoded = encodeAffine(21, 13, message)
 decodeAffine(21, 13, encoded)
-encoded = encodeAffine(3, 22, message)
-decodeAffine(3, 22, encoded)
+
+encoded = "FALSZZTYSYJZYJKYWJRZTYJZTYYNARYJKYSWARZTYEGYYJ"  #  Homework in Understanding Cryptography, by Paar and
+# Pletzl, page 26
+print()
+print("message to decode: " + encoded)
+decodeAffine(7, 22, encoded)
