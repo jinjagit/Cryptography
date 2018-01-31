@@ -26,8 +26,7 @@ def decodeAffine (a, b, encoded):
     print("Decoded with a = %d, b = %d; %s " % (a, b, decoded))
     return decoded
 
-encoded = "ÄUßWß "  #  Homework in Understanding Cryptography, by Paar and
-# Pletzl, page 27
+encoded = "ÄUßWß "  #  Homework in Understanding Cryptography, by Paar and Pletzl, page 27
 print()
 print("message to decode: " + encoded)
 decodeAffine(17, 1, encoded)
