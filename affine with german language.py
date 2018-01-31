@@ -1,4 +1,4 @@
-#  Affine Cipher with german Language - by Simon Tharby 2018
+#  Affine Cipher with German Language - by Simon Tharby 2018
 
 #  To encode: E(x) = (ax + b) mod m
 #  a, x, b = members of set Z30 AND a is member of set {1, 7, 11, 13, 17, 19, 23, 29}
