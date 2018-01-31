@@ -15,4 +15,3 @@ while (daysPerSearch > 1):
 
 print()
 print("Years: %s" % (years))
-
