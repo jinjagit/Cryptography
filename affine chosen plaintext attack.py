@@ -48,7 +48,7 @@ encoded = ""
 print()
 print("message to encode: " + message)
 
-encoded, char2 = encodeAffine(9, 13, message)  #  Example in Understanding Cryptography, by Paar and Pletzl, pages 20-21
+encoded, char2 = encodeAffine(9, 13, message)
 analyzeChosen(encoded, char2)
 
 message = "AZ"
@@ -56,7 +56,7 @@ encoded = ""
 print()
 print("message to encode: " + message)
 
-encoded, char2 = encodeAffine(21, 4, message)  #  Example in Understanding Cryptography, by Paar and Pletzl,
+encoded, char2 = encodeAffine(21, 4, message)
 # pages 20-21
 analyzeChosen(encoded, char2)
 
@@ -66,6 +66,5 @@ print()
 print("TESTING 'BAD' VERSION, WHERE 'A' IS NOT FIRST LETTER")
 print("message to encode: " + message)
 
-encoded, char2 = encodeAffine(21, 4, message)  #  Example in Understanding Cryptography, by Paar and Pletzl,
-# pages 20-21
+encoded, char2 = encodeAffine(21, 4, message)
 analyzeChosen(encoded, char2)
