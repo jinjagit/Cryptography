@@ -1,8 +1,10 @@
 # Affine Cipher, Chosen Plaintext Attack - by Simon Tharby 2018
+# Homewrok; Question 1.14, page 27, Understanding Cryptography, by Paar and Pletzl
 
 # This code assumes the attacker is able to have 2 letters encoded and receives knowledge of their respective encoded
-# outputs. It also assumes one letter is an 'a' and this letter is first in the pair (though this last point is
-# arbitrary)
+# outputs. It also assumes one letter is the first letter in the alphabet used  (an 'A'),  and this letter is first
+# in the pair. (Though the last point is arbitrary: We need the letter with value 0 to be encoded, and to know which
+# it is in the encrypted output.)
 
 # To encode: E(x) = (ax + b) mod m
 # a, x, b = members of set Z26 AND a is member of set {1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25}
@@ -25,7 +27,6 @@ def encodeAffine (a, b, message):
 #  Where c is the multiplicative inverse of a
 
 aSet = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
-cSet = [1, 9, 21, 15, 3, 19, 7, 23, 11, 5, 17, 25]  # set of multiplicative inverse(s) of respective values of a
 
 def analyzeChosen (encoded, char2):
     a = -1
@@ -57,7 +58,6 @@ print()
 print("message to encode: " + message)
 
 encoded, char2 = encodeAffine(21, 4, message)
-# pages 20-21
 analyzeChosen(encoded, char2)
 
 message = "ZA"
