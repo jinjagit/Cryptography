@@ -1,4 +1,4 @@
-#  Affine Cipher with german Language - by Simon Tharby 2018
+#  Affine Cipher with German Language - by Simon Tharby 2018
 
 #  To encode: E(x) = (ax + b) mod m
 #  a, x, b = members of set Z30 AND a is member of set {1, 7, 11, 13, 17, 19, 23, 29}
@@ -26,8 +26,7 @@ def decodeAffine (a, b, encoded):
     print("Decoded with a = %d, b = %d; %s " % (a, b, decoded))
     return decoded
 
-encoded = "ÄUßWß "  #  Homework in Understanding Cryptography, by Paar and
-# Pletzl, page 27
+encoded = "ÄUßWß "  #  Homework in Understanding Cryptography, by Paar and Pletzl, page 27
 print()
 print("message to decode: " + encoded)
 decodeAffine(17, 1, encoded)
