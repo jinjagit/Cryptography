@@ -1,10 +1,10 @@
 # Affine Cipher, Chosen Plaintext Attack - by Simon Tharby 2018
-# Homewrok; Question 1.14, page 27, Understanding Cryptography, by Paar and Pletzl
+# Homework; Question 1.14, page 27, Understanding Cryptography, by Paar and Pletzl
 
 # This code assumes the attacker is able to have 2 letters encoded and receives knowledge of their respective encoded
-# outputs. It also assumes one letter is the first letter in the alphabet used  (an 'A'),  and this letter is first
-# in the pair. (Though the last point is arbitrary: We need the letter with value 0 to be encoded, and to know which
-# it is in the encrypted output.)
+# outputs. It also assumes one letter is the first letter in the alphabet used (an 'A' in this case), and this letter
+# is first in the pair. (Though the last point is arbitrary: We need the letter with value 0 to be encoded, and to
+# know which it is in the encrypted output.)
 
 # To encode: E(x) = (ax + b) mod m
 # a, x, b = members of set Z26 AND a is member of set {1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25}
@@ -23,8 +23,7 @@ def encodeAffine (a, b, message):
     print("Encoded with a = %d, b = %d; %s " % (a, b, encoded))
     return encoded, char2
 
-#  To decode: D(x) = c(x - b) mod m
-#  Where c is the multiplicative inverse of a
+#  Analyze to find value of a and b for this Affine Cipher
 
 aSet = [1, 3, 5, 7, 9, 11, 15, 17, 19, 21, 23, 25]
 
