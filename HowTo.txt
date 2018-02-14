@@ -8,4 +8,4 @@ To view a 'live' version of a notebook:
 
 Note: Much code depends on functions defined in previous code blocks (but not all). Simply running a code block may not ensure all functions it includes are defined, since some may not run until an input is provided; i.e. 'fully running' a code block includes providing satisfactory input(s) and the production of all related output(s).
 
-4. MyBinder provides only 30 minutes maximum of access. Reload if time expires.
+4. MyBinder allegedly provides only 30 minutes maximum of access. Reload if time expires.
